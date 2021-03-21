@@ -6,7 +6,7 @@
 package view;
 
 /**
- *
+ * Victor Rodrigues Rocha
  * @author FELYPECARVALHODEOLIV
  */
 public class Login extends javax.swing.JFrame {
