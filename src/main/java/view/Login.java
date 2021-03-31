@@ -38,16 +38,17 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Menu Principal", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 14))); // NOI18N
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\victo\\Downloads\\Victor pasta\\SENAC\\2º Semestre\\Projeto Integrador 2\\icone cadastro clientes.png")); // NOI18N
-        jButton1.setText("Cadastro de Clientes");
+        jButton1.setText("Cadastro de Teste");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\victo\\Downloads\\Victor pasta\\SENAC\\2º Semestre\\Projeto Integrador 2\\icone produto.png")); // NOI18N
         jButton2.setText("Cadastro de Produtos");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\victo\\Downloads\\Victor pasta\\SENAC\\2º Semestre\\Projeto Integrador 2\\icone vendas.png")); // NOI18N
         jButton3.setText("Tela de Venda ");
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\victo\\Downloads\\Victor pasta\\SENAC\\2º Semestre\\Projeto Integrador 2\\icone relatório.png")); // NOI18N
         jButton4.setText("Tela de Relatórios");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -103,6 +104,10 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
