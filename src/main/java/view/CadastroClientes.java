@@ -62,7 +62,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         btnRemover = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
         menuOpcoes1 = new javax.swing.JMenu();
-        opCadastroClientes1 = new javax.swing.JMenuItem();
+        opMenuPrincipal1 = new javax.swing.JMenuItem();
         opCadastroProdutos1 = new javax.swing.JMenuItem();
         opTelaVendas1 = new javax.swing.JMenuItem();
         opTelaRelatorios1 = new javax.swing.JMenuItem();
@@ -174,6 +174,11 @@ public class CadastroClientes extends javax.swing.JFrame {
         jButton1.setText("Adicionar");
 
         jButton2.setText("Limpar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlCadastroLayout = new javax.swing.GroupLayout(pnlCadastro);
         pnlCadastro.setLayout(pnlCadastroLayout);
@@ -275,11 +280,9 @@ public class CadastroClientes extends javax.swing.JFrame {
                     .addGroup(pnlCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblUF)
                         .addComponent(cboUF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlCadastroLayout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(pnlCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblBairro)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(pnlCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblBairro)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnlCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -396,14 +399,14 @@ public class CadastroClientes extends javax.swing.JFrame {
 
         menuOpcoes1.setText("Opções");
 
-        opCadastroClientes1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
-        opCadastroClientes1.setText("Cadastro de Clientes");
-        opCadastroClientes1.addActionListener(new java.awt.event.ActionListener() {
+        opMenuPrincipal1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
+        opMenuPrincipal1.setText("Menu Principal");
+        opMenuPrincipal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opCadastroClientes1ActionPerformed(evt);
+                opMenuPrincipal1ActionPerformed(evt);
             }
         });
-        menuOpcoes1.add(opCadastroClientes1);
+        menuOpcoes1.add(opMenuPrincipal1);
 
         opCadastroProdutos1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
         opCadastroProdutos1.setText("Casdastro de Produtos");
@@ -472,11 +475,11 @@ public class CadastroClientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefoneActionPerformed
 
-    private void opCadastroClientes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroClientes1ActionPerformed
-        CadastroClientes telaCadastroClientes = new  CadastroClientes();
-        telaCadastroClientes.setVisible(true);
+    private void opMenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opMenuPrincipal1ActionPerformed
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        menuPrincipal.setVisible(true);
         setVisible(false);
-    }//GEN-LAST:event_opCadastroClientes1ActionPerformed
+    }//GEN-LAST:event_opMenuPrincipal1ActionPerformed
 
     private void opCadastroProdutos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroProdutos1ActionPerformed
         CadastroProdutos telaCadastroProdutos = new CadastroProdutos();
@@ -499,6 +502,20 @@ public class CadastroClientes extends javax.swing.JFrame {
     private void opSair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opSair1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_opSair1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        txtCadastroNome.setText("");
+        txtCadastroCPF.setText("");
+        txtTelefone.setText("");
+        txtEmail.setText(""); 
+        txtDataNasci.setText(""); 
+        txtEmail.setText(""); 
+        txtLougradouro.setText(""); 
+        txtNumero.setText(""); 
+        txtCEP.setText(""); 
+        txtBairro.setText(""); 
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -569,8 +586,8 @@ public class CadastroClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lblTelefone;
     private javax.swing.JLabel lblUF;
     private javax.swing.JMenu menuOpcoes1;
-    private javax.swing.JMenuItem opCadastroClientes1;
     private javax.swing.JMenuItem opCadastroProdutos1;
+    private javax.swing.JMenuItem opMenuPrincipal1;
     private javax.swing.JMenuItem opSair1;
     private javax.swing.JMenuItem opTelaRelatorios1;
     private javax.swing.JMenuItem opTelaVendas1;
