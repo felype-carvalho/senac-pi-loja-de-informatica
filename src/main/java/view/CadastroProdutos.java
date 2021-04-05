@@ -123,9 +123,11 @@ public class CadastroProdutos extends javax.swing.JFrame {
                     .addComponent(lblQuantidadeProduto)
                     .addComponent(txtQuantidadeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPrecoProduto)
-                    .addComponent(txtPrecoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtPrecoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1))
+                    .addComponent(lblPrecoProduto))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnAdicionarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
@@ -204,7 +206,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnAlterarProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
         menuOpcoes1.setText("Opções");
@@ -320,10 +322,8 @@ public class CadastroProdutos extends javax.swing.JFrame {
               JOptionPane.showMessageDialog(this, "Digite somente número no campo quantidade!");
                txtQuantidadeProduto.setBackground(Color.red); //Deixar campo vermelha para informar o erro
                return;
-          }finally{
-
-             txtQuantidadeProduto.setText("");
           }
+
             //Validando a quantidade do preço
             if(txtPrecoProduto.getText().trim().equals("")){
             
