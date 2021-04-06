@@ -128,8 +128,8 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnTelaCadastroClientes" linkSize="1" min="-2" max="-2" attributes="0"/>
                       <Component id="btnTelaVenda" linkSize="1" min="-2" max="-2" attributes="0"/>
@@ -139,7 +139,7 @@
                       <Component id="btnTelaCadastroProdutos" linkSize="1" min="-2" max="-2" attributes="0"/>
                       <Component id="btnTelaRelatorios" linkSize="1" min="-2" pref="124" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="38" max="32767" attributes="0"/>
+                  <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -164,6 +164,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnTelaCadastroClientes">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone cadastro clientes.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Cadastro de Clientes"/>
           </Properties>
           <Events>
@@ -172,6 +175,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnTelaCadastroProdutos">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone produto.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Cadastro de Produtos"/>
           </Properties>
           <Events>
@@ -180,6 +186,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnTelaVenda">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone vendas.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Tela de Venda "/>
           </Properties>
           <Events>
@@ -188,6 +197,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnTelaRelatorios">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone relat&#xf3;rio.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Tela de Relat&#xf3;rios"/>
           </Properties>
           <Events>

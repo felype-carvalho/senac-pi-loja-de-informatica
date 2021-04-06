@@ -32,6 +32,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Menu Principal", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 14))); // NOI18N
 
+        btnTelaCadastroClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone cadastro clientes.png"))); // NOI18N
         btnTelaCadastroClientes.setText("Cadastro de Clientes");
         btnTelaCadastroClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -39,6 +40,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        btnTelaCadastroProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone produto.png"))); // NOI18N
         btnTelaCadastroProdutos.setText("Cadastro de Produtos");
         btnTelaCadastroProdutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +48,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        btnTelaVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone vendas.png"))); // NOI18N
         btnTelaVenda.setText("Tela de Venda ");
         btnTelaVenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,6 +56,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        btnTelaRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone relatório.png"))); // NOI18N
         btnTelaRelatorios.setText("Tela de Relatórios");
         btnTelaRelatorios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,7 +69,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnTelaCadastroClientes)
                     .addComponent(btnTelaVenda))
@@ -73,7 +77,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnTelaCadastroProdutos)
                     .addComponent(btnTelaRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnTelaCadastroClientes, btnTelaCadastroProdutos, btnTelaRelatorios, btnTelaVenda});
