@@ -28,6 +28,14 @@ public class TelaVenda extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        menuOpcoes = new javax.swing.JMenu();
+        opMenuPrincipal = new javax.swing.JMenuItem();
+        opCadastroClientes = new javax.swing.JMenuItem();
+        opCadastroProdutos = new javax.swing.JMenuItem();
+        opTelaRelatorios = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        opSair = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -151,6 +159,58 @@ public class TelaVenda extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        menuOpcoes.setText("Opções");
+
+        opMenuPrincipal.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
+        opMenuPrincipal.setText("Menu Principal");
+        opMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opMenuPrincipalActionPerformed(evt);
+            }
+        });
+        menuOpcoes.add(opMenuPrincipal);
+
+        opCadastroClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
+        opCadastroClientes.setText("Cadastro de Clientes");
+        opCadastroClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opCadastroClientesActionPerformed(evt);
+            }
+        });
+        menuOpcoes.add(opCadastroClientes);
+
+        opCadastroProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
+        opCadastroProdutos.setText("Cadastro de Produtos");
+        opCadastroProdutos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opCadastroProdutosActionPerformed(evt);
+            }
+        });
+        menuOpcoes.add(opCadastroProdutos);
+
+        opTelaRelatorios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
+        opTelaRelatorios.setText("Tela de Relatórios");
+        opTelaRelatorios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opTelaRelatoriosActionPerformed(evt);
+            }
+        });
+        menuOpcoes.add(opTelaRelatorios);
+        menuOpcoes.add(jSeparator1);
+
+        opSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
+        opSair.setText("Sair");
+        opSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opSairActionPerformed(evt);
+            }
+        });
+        menuOpcoes.add(opSair);
+
+        jMenuBar1.add(menuOpcoes);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -173,6 +233,34 @@ public class TelaVenda extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void opCadastroProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroProdutosActionPerformed
+        CadastroProdutos telaCadastroProdutos = new  CadastroProdutos();
+        telaCadastroProdutos.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opCadastroProdutosActionPerformed
+
+    private void opMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opMenuPrincipalActionPerformed
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        menuPrincipal.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opMenuPrincipalActionPerformed
+
+    private void opTelaRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opTelaRelatoriosActionPerformed
+        TelaRelatorio telaRelatorio = new TelaRelatorio();
+        telaRelatorio.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opTelaRelatoriosActionPerformed
+
+    private void opCadastroClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroClientesActionPerformed
+        CadastroClientes telaCadastroClientes = new  CadastroClientes();
+        telaCadastroClientes.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opCadastroClientesActionPerformed
+
+    private void opSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opSairActionPerformed
+         System.exit(0);
+    }//GEN-LAST:event_opSairActionPerformed
 
    
     public static void main(String args[]) {
@@ -212,10 +300,12 @@ public class TelaVenda extends javax.swing.JFrame {
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnRemoverVenda;
     private javax.swing.JButton jButton3;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable3;
     private javax.swing.JTextField jTextField1;
@@ -223,5 +313,11 @@ public class TelaVenda extends javax.swing.JFrame {
     private javax.swing.JLabel lblDescricaoVenda;
     private javax.swing.JLabel lblNomeVenda;
     private javax.swing.JLabel lblValorTotalVenda;
+    private javax.swing.JMenu menuOpcoes;
+    private javax.swing.JMenuItem opCadastroClientes;
+    private javax.swing.JMenuItem opCadastroProdutos;
+    private javax.swing.JMenuItem opMenuPrincipal;
+    private javax.swing.JMenuItem opSair;
+    private javax.swing.JMenuItem opTelaRelatorios;
     // End of variables declaration//GEN-END:variables
 }
