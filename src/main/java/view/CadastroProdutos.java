@@ -65,6 +65,11 @@ public class CadastroProdutos extends javax.swing.JFrame {
         lblPrecoProduto.setText("Preço:");
 
         txtPrecoProduto.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getCurrencyInstance())));
+        txtPrecoProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecoProdutoActionPerformed(evt);
+            }
+        });
 
         btnAdicionarProduto.setText("Adicionar");
         btnAdicionarProduto.addActionListener(new java.awt.event.ActionListener() {
@@ -390,6 +395,10 @@ public class CadastroProdutos extends javax.swing.JFrame {
         txtQuantidadeProduto.setText("");
         txtPrecoProduto.setText("");           
     }//GEN-LAST:event_btnLimparProdutoActionPerformed
+
+    private void txtPrecoProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecoProdutoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecoProdutoActionPerformed
 
    
     public static void main(String args[]) {
