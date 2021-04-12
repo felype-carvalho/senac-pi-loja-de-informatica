@@ -369,7 +369,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
     }//GEN-LAST:event_opTelaVendas1ActionPerformed
 
     private void opTelaRelatorios1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opTelaRelatorios1ActionPerformed
-        TelaRelatorio telaRelatorio = new TelaRelatorio();
+        TelaRelatorioSintetico telaRelatorio = new TelaRelatorioSintetico();
         telaRelatorio.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_opTelaRelatorios1ActionPerformed
