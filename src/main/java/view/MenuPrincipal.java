@@ -189,7 +189,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnTelaVendaActionPerformed
 
     private void btnTelaRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTelaRelatoriosActionPerformed
-        TelaRelatorio telaRelatorio = new TelaRelatorio();
+        TelaRelatorioSintetico telaRelatorio = new TelaRelatorioSintetico();
         telaRelatorio.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_btnTelaRelatoriosActionPerformed
@@ -217,7 +217,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_opTelaVendasActionPerformed
 
     private void opTelaRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opTelaRelatoriosActionPerformed
-        TelaRelatorio telaRelatorio = new TelaRelatorio();
+        TelaRelatorioSintetico telaRelatorio = new TelaRelatorioSintetico();
         telaRelatorio.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_opTelaRelatoriosActionPerformed
