@@ -12,6 +12,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
         initComponents();
         setResizable(false); //Impedir alteração no tamanho da tela       
         setLocationRelativeTo(null); //deixar centralizado na tela do monitor
+        this.setTitle("Loja de Informática - Tela de Cadastro de Produtos"); //altera titulo da janela
     }
     
     @SuppressWarnings("unchecked")

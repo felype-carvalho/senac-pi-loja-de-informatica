@@ -16,6 +16,10 @@ public class TelaRelatorioAnalitico extends javax.swing.JFrame {
      */
     public TelaRelatorioAnalitico() {
         initComponents();
+        initComponents();
+        setResizable(false); //Impedir alteração no tamanho da tela       
+        setLocationRelativeTo(null); //deixar centralizado na tela do monitor
+        this.setTitle("Loja de Informática - Tela de Relatórios Analíticos"); //altera titulo da janela
     }
 
     /**
@@ -179,7 +183,7 @@ public class TelaRelatorioAnalitico extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

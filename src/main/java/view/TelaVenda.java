@@ -6,8 +6,7 @@ public class TelaVenda extends javax.swing.JFrame {
         initComponents();
         setResizable(false); //Impedir alteração no tamanho da tela       
         setLocationRelativeTo(null); //deixar centralizado na tela do monitor
-        
-        this.setTitle("teste");
+        this.setTitle("Loja de Informática - Tela de Vendas"); //altera titulo da janela
     }
 
    

@@ -7,6 +7,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         initComponents();
         setResizable(false); //Impedir alteração no tamanho da tela       
         setLocationRelativeTo(null); //deixar centralizado na tela do monitor
+        this.setTitle("Loja de Informática - Tela de Cadastro de Clientes"); //altera titulo da janela
     }
 
     
@@ -544,7 +545,7 @@ public class CadastroClientes extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

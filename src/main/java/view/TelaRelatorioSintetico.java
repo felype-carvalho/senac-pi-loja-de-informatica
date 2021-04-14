@@ -8,6 +8,7 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
         initComponents();
         setResizable(false); //Impedir alteração no tamanho da tela       
         setLocationRelativeTo(null); //deixar centralizado na tela do monitor
+        this.setTitle("Loja de Informática - Tela de Relatórios Sintéticos"); //altera titulo da janela
     }
 
    

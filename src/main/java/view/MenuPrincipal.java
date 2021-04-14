@@ -6,7 +6,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public MenuPrincipal() {
         initComponents();
         setResizable(false); //Impedir alteração no tamanho da tela       
-        setLocationRelativeTo(null); //deixar centralizado na tela do monitor       
+        setLocationRelativeTo(null); //deixar centralizado na tela do monitor
+        this.setTitle("Loja de Informática - Menu Principal"); //altera titulo da janela
     }
     
     @SuppressWarnings("unchecked")
