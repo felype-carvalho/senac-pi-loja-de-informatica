@@ -131,14 +131,14 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnTelaRelatorios1" max="32767" attributes="0"/>
+                      <Component id="btnTelaRelAnalitico" max="32767" attributes="0"/>
                       <Component id="btnTelaCadastroClientes" linkSize="1" max="32767" attributes="0"/>
-                      <Component id="btnTelaVenda" linkSize="1" max="32767" attributes="0"/>
+                      <Component id="btnTelaVendas" linkSize="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnTelaCadastroProdutos" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnTelaRelatorios" linkSize="1" min="-2" pref="124" max="-2" attributes="0"/>
+                      <Component id="btnTelaRelSintetico" linkSize="1" min="-2" pref="124" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
@@ -154,11 +154,11 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnTelaVenda" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnTelaRelatorios" linkSize="2" alignment="3" min="-2" pref="76" max="-2" attributes="0"/>
+                      <Component id="btnTelaVendas" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnTelaRelSintetico" linkSize="2" alignment="3" min="-2" pref="76" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnTelaRelatorios1" min="-2" pref="76" max="-2" attributes="0"/>
+                  <Component id="btnTelaRelAnalitico" min="-2" pref="76" max="-2" attributes="0"/>
                   <EmptySpace pref="27" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -187,37 +187,37 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaCadastroProdutosActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnTelaVenda">
+        <Component class="javax.swing.JButton" name="btnTelaVendas">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icone vendas.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Tela de Venda "/>
+            <Property name="text" type="java.lang.String" value="Tela de Vendas"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaVendaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaVendasActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnTelaRelatorios">
+        <Component class="javax.swing.JButton" name="btnTelaRelSintetico">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone relat&#xf3;rio.png"/>
+              <Image iconType="3" name="/icone analytics2.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Sint&#xe9;tico"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaRelatoriosActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaRelSinteticoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnTelaRelatorios1">
+        <Component class="javax.swing.JButton" name="btnTelaRelAnalitico">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone relat&#xf3;rio.png"/>
+              <Image iconType="3" name="/icone analytics1.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Anal&#xed;ticos"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaRelatorios1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaRelAnaliticoActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
