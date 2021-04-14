@@ -25,7 +25,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         opCadastroClientes = new javax.swing.JMenuItem();
         opCadastroProdutos = new javax.swing.JMenuItem();
         opTelaVendas = new javax.swing.JMenuItem();
-        opTelaRelatorios = new javax.swing.JMenuItem();
+        opRelatorioSintetico = new javax.swing.JMenuItem();
+        opRelatorioAnalitico = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         opSair = new javax.swing.JMenuItem();
 
@@ -139,14 +140,23 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         menuOpcoes.add(opTelaVendas);
 
-        opTelaRelatorios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
-        opTelaRelatorios.setText("Tela de Relatórios");
-        opTelaRelatorios.addActionListener(new java.awt.event.ActionListener() {
+        opRelatorioSintetico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK));
+        opRelatorioSintetico.setText("Relatórios Sintéticos");
+        opRelatorioSintetico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opTelaRelatoriosActionPerformed(evt);
+                opRelatorioSinteticoActionPerformed(evt);
             }
         });
-        menuOpcoes.add(opTelaRelatorios);
+        menuOpcoes.add(opRelatorioSintetico);
+
+        opRelatorioAnalitico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        opRelatorioAnalitico.setText("Relatórios Analíticos");
+        opRelatorioAnalitico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opRelatorioAnaliticoActionPerformed(evt);
+            }
+        });
+        menuOpcoes.add(opRelatorioAnalitico);
         menuOpcoes.add(jSeparator1);
 
         opSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
@@ -228,17 +238,23 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_opTelaVendasActionPerformed
 
-    private void opTelaRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opTelaRelatoriosActionPerformed
+    private void opRelatorioSinteticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opRelatorioSinteticoActionPerformed
         TelaRelatorioSintetico telaRelatorio = new TelaRelatorioSintetico();
         telaRelatorio.setVisible(true);
         setVisible(false);
-    }//GEN-LAST:event_opTelaRelatoriosActionPerformed
+    }//GEN-LAST:event_opRelatorioSinteticoActionPerformed
 
     private void btnTelaRelAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTelaRelAnaliticoActionPerformed
         TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
         telaRelatorio.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_btnTelaRelAnaliticoActionPerformed
+
+    private void opRelatorioAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opRelatorioAnaliticoActionPerformed
+        TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
+        telaRelatorio.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opRelatorioAnaliticoActionPerformed
 
     
     
@@ -287,8 +303,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu menuOpcoes;
     private javax.swing.JMenuItem opCadastroClientes;
     private javax.swing.JMenuItem opCadastroProdutos;
+    private javax.swing.JMenuItem opRelatorioAnalitico;
+    private javax.swing.JMenuItem opRelatorioSintetico;
     private javax.swing.JMenuItem opSair;
-    private javax.swing.JMenuItem opTelaRelatorios;
     private javax.swing.JMenuItem opTelaVendas;
     private javax.swing.JSeparator separadorMenuOpcoes;
     // End of variables declaration//GEN-END:variables
