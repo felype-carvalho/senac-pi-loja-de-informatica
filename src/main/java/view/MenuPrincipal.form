@@ -49,21 +49,10 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Alt+S"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Sint&#xe9;ticos"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opRelatorioSinteticoActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="opRelatorioAnalitico">
-              <Properties>
-                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+A"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Anal&#xed;ticos"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opRelatorioAnaliticoActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
@@ -141,8 +130,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnTelaRelAnalitico" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnTelaCadastroClientes" linkSize="1" max="32767" attributes="0"/>
                       <Component id="btnTelaVendas" linkSize="1" max="32767" attributes="0"/>
                   </Group>
@@ -168,9 +156,7 @@
                       <Component id="btnTelaVendas" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnTelaRelSintetico" linkSize="2" alignment="3" min="-2" pref="76" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnTelaRelAnalitico" min="-2" pref="76" max="-2" attributes="0"/>
-                  <EmptySpace pref="27" max="32767" attributes="0"/>
+                  <EmptySpace pref="53" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -212,23 +198,12 @@
         <Component class="javax.swing.JButton" name="btnTelaRelSintetico">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone analytics2.png"/>
+              <Image iconType="3" name="/icone analytics1.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Sint&#xe9;tico"/>
+            <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaRelSinteticoActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnTelaRelAnalitico">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone analytics1.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Anal&#xed;ticos"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTelaRelAnaliticoActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

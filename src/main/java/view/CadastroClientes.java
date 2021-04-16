@@ -67,7 +67,6 @@ public class CadastroClientes extends javax.swing.JFrame {
         opCadastroProdutos1 = new javax.swing.JMenuItem();
         opTelaVendas1 = new javax.swing.JMenuItem();
         opRelatorioSintetico = new javax.swing.JMenuItem();
-        opRelatorioAnalitico = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         opSair1 = new javax.swing.JMenuItem();
 
@@ -439,15 +438,6 @@ public class CadastroClientes extends javax.swing.JFrame {
             }
         });
         menuOpcoes1.add(opRelatorioSintetico);
-
-        opRelatorioAnalitico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        opRelatorioAnalitico.setText("Relatórios Analíticos");
-        opRelatorioAnalitico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opRelatorioAnaliticoActionPerformed(evt);
-            }
-        });
-        menuOpcoes1.add(opRelatorioAnalitico);
         menuOpcoes1.add(jSeparator2);
 
         opSair1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
@@ -527,12 +517,6 @@ public class CadastroClientes extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_opRelatorioSinteticoActionPerformed
 
-    private void opRelatorioAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opRelatorioAnaliticoActionPerformed
-        TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
-        telaRelatorio.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_opRelatorioAnaliticoActionPerformed
-
     private void opSair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opSair1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_opSair1ActionPerformed
@@ -608,7 +592,6 @@ public class CadastroClientes extends javax.swing.JFrame {
     private javax.swing.JMenu menuOpcoes1;
     private javax.swing.JMenuItem opCadastroProdutos1;
     private javax.swing.JMenuItem opMenuPrincipal1;
-    private javax.swing.JMenuItem opRelatorioAnalitico;
     private javax.swing.JMenuItem opRelatorioSintetico;
     private javax.swing.JMenuItem opSair1;
     private javax.swing.JMenuItem opTelaVendas1;

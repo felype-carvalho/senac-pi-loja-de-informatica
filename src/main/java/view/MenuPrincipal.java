@@ -20,14 +20,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btnTelaCadastroProdutos = new javax.swing.JButton();
         btnTelaVendas = new javax.swing.JButton();
         btnTelaRelSintetico = new javax.swing.JButton();
-        btnTelaRelAnalitico = new javax.swing.JButton();
         barraMenu = new javax.swing.JMenuBar();
         menuOpcoes = new javax.swing.JMenu();
         opCadastroClientes = new javax.swing.JMenuItem();
         opCadastroProdutos = new javax.swing.JMenuItem();
         opTelaVendas = new javax.swing.JMenuItem();
         opRelatorioSintetico = new javax.swing.JMenuItem();
-        opRelatorioAnalitico = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         opSair = new javax.swing.JMenuItem();
 
@@ -59,19 +57,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnTelaRelSintetico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone analytics2.png"))); // NOI18N
-        btnTelaRelSintetico.setText("Relatórios Sintético");
+        btnTelaRelSintetico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone analytics1.png"))); // NOI18N
+        btnTelaRelSintetico.setText("Relatórios");
         btnTelaRelSintetico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTelaRelSinteticoActionPerformed(evt);
-            }
-        });
-
-        btnTelaRelAnalitico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone analytics1.png"))); // NOI18N
-        btnTelaRelAnalitico.setText("Relatórios Analíticos");
-        btnTelaRelAnalitico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTelaRelAnaliticoActionPerformed(evt);
             }
         });
 
@@ -81,8 +71,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnTelaRelAnalitico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnTelaCadastroClientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnTelaVendas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(27, 27, 27)
@@ -105,9 +94,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnTelaVendas)
                     .addComponent(btnTelaRelSintetico, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnTelaRelAnalitico, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnTelaCadastroClientes, btnTelaCadastroProdutos, btnTelaRelSintetico, btnTelaVendas});
@@ -142,22 +129,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         menuOpcoes.add(opTelaVendas);
 
         opRelatorioSintetico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK));
-        opRelatorioSintetico.setText("Relatórios Sintéticos");
+        opRelatorioSintetico.setText("Relatórios");
         opRelatorioSintetico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 opRelatorioSinteticoActionPerformed(evt);
             }
         });
         menuOpcoes.add(opRelatorioSintetico);
-
-        opRelatorioAnalitico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        opRelatorioAnalitico.setText("Relatórios Analíticos");
-        opRelatorioAnalitico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opRelatorioAnaliticoActionPerformed(evt);
-            }
-        });
-        menuOpcoes.add(opRelatorioAnalitico);
         menuOpcoes.add(jSeparator1);
 
         opSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
@@ -245,18 +223,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_opRelatorioSinteticoActionPerformed
 
-    private void btnTelaRelAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTelaRelAnaliticoActionPerformed
-        TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
-        telaRelatorio.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_btnTelaRelAnaliticoActionPerformed
-
-    private void opRelatorioAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opRelatorioAnaliticoActionPerformed
-        TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
-        telaRelatorio.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_opRelatorioAnaliticoActionPerformed
-
     
     
     public static void main(String args[]) {
@@ -296,7 +262,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuBar barraMenu;
     private javax.swing.JButton btnTelaCadastroClientes;
     private javax.swing.JButton btnTelaCadastroProdutos;
-    private javax.swing.JButton btnTelaRelAnalitico;
     private javax.swing.JButton btnTelaRelSintetico;
     private javax.swing.JButton btnTelaVendas;
     private javax.swing.JPanel jPanel1;
@@ -304,7 +269,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu menuOpcoes;
     private javax.swing.JMenuItem opCadastroClientes;
     private javax.swing.JMenuItem opCadastroProdutos;
-    private javax.swing.JMenuItem opRelatorioAnalitico;
     private javax.swing.JMenuItem opRelatorioSintetico;
     private javax.swing.JMenuItem opSair;
     private javax.swing.JMenuItem opTelaVendas;

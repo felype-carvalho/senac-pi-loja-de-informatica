@@ -26,13 +26,13 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
         tblRelatorioSintetico = new javax.swing.JTable();
         txtTotalPeriodo = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        btnRelatorioAnalitico = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuOpcoes1 = new javax.swing.JMenu();
         opMenuPrincipal1 = new javax.swing.JMenuItem();
         opCadastroClientes1 = new javax.swing.JMenuItem();
         opCadastroProdutos1 = new javax.swing.JMenuItem();
         opTelaVendas1 = new javax.swing.JMenuItem();
-        opRelatorioAnalitico = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         opSair1 = new javax.swing.JMenuItem();
 
@@ -85,6 +85,13 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
 
         jLabel4.setText("De:");
 
+        btnRelatorioAnalitico.setText("Detalhes");
+        btnRelatorioAnalitico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRelatorioAnaliticoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -92,13 +99,18 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(txtTotalPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtTotalPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRelatorioAnalitico)
+                        .addGap(18, 18, 18))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(3, 3, 3)
                 .addComponent(jLabel4)
@@ -128,9 +140,11 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
                     .addComponent(btnPesquisar)
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtTotalPeriodo)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTotalPeriodo)
+                    .addComponent(btnRelatorioAnalitico))
                 .addContainerGap())
         );
 
@@ -173,15 +187,6 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
             }
         });
         menuOpcoes1.add(opTelaVendas1);
-
-        opRelatorioAnalitico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        opRelatorioAnalitico.setText("Relatórios Analíticos");
-        opRelatorioAnalitico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opRelatorioAnaliticoActionPerformed(evt);
-            }
-        });
-        menuOpcoes1.add(opRelatorioAnalitico);
         menuOpcoes1.add(jSeparator2);
 
         opSair1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
@@ -205,7 +210,7 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -215,23 +220,15 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
-    private void opMenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opMenuPrincipal1ActionPerformed
-        MenuPrincipal menuPrincipal = new MenuPrincipal();
-        menuPrincipal.setVisible(true);
+    private void btnRelatorioAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRelatorioAnaliticoActionPerformed
+        TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
+        telaRelatorio.setVisible(true);
         setVisible(false);
-    }//GEN-LAST:event_opMenuPrincipal1ActionPerformed
+    }//GEN-LAST:event_btnRelatorioAnaliticoActionPerformed
 
-    private void opCadastroClientes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroClientes1ActionPerformed
-        CadastroClientes telaCadastroClientes = new  CadastroClientes();
-        telaCadastroClientes.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_opCadastroClientes1ActionPerformed
-
-    private void opCadastroProdutos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroProdutos1ActionPerformed
-        CadastroProdutos telaCadastroProdutos = new CadastroProdutos();
-        telaCadastroProdutos.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_opCadastroProdutos1ActionPerformed
+    private void opSair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opSair1ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_opSair1ActionPerformed
 
     private void opTelaVendas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opTelaVendas1ActionPerformed
         TelaVenda telaVenda = new TelaVenda();
@@ -239,15 +236,23 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_opTelaVendas1ActionPerformed
 
-    private void opRelatorioAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opRelatorioAnaliticoActionPerformed
-        TelaRelatorioAnalitico telaRelatorio = new TelaRelatorioAnalitico();
-        telaRelatorio.setVisible(true);
+    private void opCadastroProdutos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroProdutos1ActionPerformed
+        CadastroProdutos telaCadastroProdutos = new CadastroProdutos();
+        telaCadastroProdutos.setVisible(true);
         setVisible(false);
-    }//GEN-LAST:event_opRelatorioAnaliticoActionPerformed
+    }//GEN-LAST:event_opCadastroProdutos1ActionPerformed
 
-    private void opSair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opSair1ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_opSair1ActionPerformed
+    private void opCadastroClientes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opCadastroClientes1ActionPerformed
+        CadastroClientes telaCadastroClientes = new  CadastroClientes();
+        telaCadastroClientes.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opCadastroClientes1ActionPerformed
+
+    private void opMenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opMenuPrincipal1ActionPerformed
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        menuPrincipal.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_opMenuPrincipal1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -287,6 +292,7 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnPesquisar;
+    private javax.swing.JButton btnRelatorioAnalitico;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
@@ -298,7 +304,6 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
     private javax.swing.JMenuItem opCadastroClientes1;
     private javax.swing.JMenuItem opCadastroProdutos1;
     private javax.swing.JMenuItem opMenuPrincipal1;
-    private javax.swing.JMenuItem opRelatorioAnalitico;
     private javax.swing.JMenuItem opSair1;
     private javax.swing.JMenuItem opTelaVendas1;
     private javax.swing.JTable tblRelatorioSintetico;
