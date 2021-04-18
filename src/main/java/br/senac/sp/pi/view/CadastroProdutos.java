@@ -1,4 +1,4 @@
-package view;
+package br.senac.sp.pi.view;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
