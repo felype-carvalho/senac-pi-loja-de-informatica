@@ -1,4 +1,4 @@
-package view;
+package br.senac.sp.pi.view;
 
 
 public class TelaRelatorioSintetico extends javax.swing.JFrame {

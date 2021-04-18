@@ -1,6 +1,6 @@
-package code;
+package br.senac.sp.pi;
 
-import view.MenuPrincipal;
+import br.senac.sp.pi.view.MenuPrincipal;
 
 public class Main {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package view;
+package br.senac.sp.pi.view;
 
 public class TelaVenda extends javax.swing.JFrame {
 
