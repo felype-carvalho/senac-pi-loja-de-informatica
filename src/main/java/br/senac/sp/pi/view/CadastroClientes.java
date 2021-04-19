@@ -12,6 +12,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         setResizable(false); //Impedir alteração no tamanho da tela       
         setLocationRelativeTo(null); //deixar centralizado na tela do monitor
         this.setTitle("Loja de Informática - Tela de Cadastro de Clientes"); //altera titulo da janela
+        objCliente = new Cliente();
     }
 
     
@@ -599,7 +600,7 @@ public class CadastroClientes extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed
-        if(tblClientes.getRowCount()>0) {
+        if(tblClientes.getSelectedRow() != -1) {
             //Resgato o número da linha pelo JTable
             int numeroLinha = tblClientes.getSelectedRow();
             
@@ -611,24 +612,20 @@ public class CadastroClientes extends javax.swing.JFrame {
             objCliente.setId(IDcliente);
             objCliente.setNome(nome);
             objCliente.setCpf(cpf);
-            
-            //Passo o objeto para a tela de Cadastro informando que é alteração
-            //CadastrarCliente telaCadastro = new CadastrarCliente(objCliente);
-            //telaCadastro.modoTela = "Alteração";
-            
-            //Exibir o JFrame
-            //telaCadastro.setVisible(true);
-            
-            
-            
         }else{
             JOptionPane.showMessageDialog(this, "Selecione um cliente da tabela!");
         }
     }//GEN-LAST:event_btnAlterarActionPerformed
 
     private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
-        if(tblClientes.getRowCount()>0) {
+        if(tblClientes.getSelectedRow() != -1) {
+            //Resgato o número da linha pelo JTable
+            int numeroLinha = tblClientes.getSelectedRow();
             
+            //Resgato o ID (oculto) do cliente pelo JTableModel
+            int IDcliente = Integer.parseInt(tblClientes.getModel().getValueAt(numeroLinha, 0).toString());
+
+            objCliente.setId(IDcliente);
         }else{
             JOptionPane.showMessageDialog(this, "Selecione um cliente da tabela!");
         }
