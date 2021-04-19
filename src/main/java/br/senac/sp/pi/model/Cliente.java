@@ -18,13 +18,11 @@ public class Cliente {
 
     private String estadoCivil;
 
-    private String logradouro;
-
-    private Integer numero;
+    private String endereco;
 
     private String cep;
 
-    private String bairro;
+    private String cidade;
 
     private String uf;
 
@@ -84,20 +82,12 @@ public class Cliente {
         this.estadoCivil = estadoCivil;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getCep() {
@@ -108,12 +98,12 @@ public class Cliente {
         this.cep = cep;
     }
 
-    public String getBairro() {
-        return bairro;
+    public String getCidade() {
+        return cidade;
     }
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setCidade(String bairro) {
+        this.cidade = bairro;
     }
 
     public String getUf() {
