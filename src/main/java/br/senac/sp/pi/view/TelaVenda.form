@@ -109,7 +109,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="pnlAdicionaProduto" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="30" max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -142,12 +142,12 @@
                           <Component id="txtDescricaoProduto" min="-2" pref="206" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnAdicionarCarrinho" linkSize="3" max="32767" attributes="0"/>
-                      <Component id="btnBuscarProduto" linkSize="3" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btnBuscarProduto" pref="180" max="32767" attributes="0"/>
+                      <Component id="btnAdicionarCarrinho" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -165,7 +165,7 @@
                   <EmptySpace pref="27" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jScrollPane1" min="-2" pref="116" max="-2" attributes="0"/>
-                      <Component id="btnAdicionarCarrinho" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAdicionarCarrinho" min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
@@ -196,6 +196,9 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnAdicionarCarrinho">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone adicionar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Adicionar ao carrinho"/>
           </Properties>
           <Events>
@@ -218,6 +221,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnBuscarProduto">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone buscar2.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
         </Component>
@@ -237,7 +243,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane3" pref="730" max="32767" attributes="0"/>
+                      <Component id="jScrollPane3" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="lblValorTotalVenda" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -308,6 +314,9 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnRemoverVenda">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone remover.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Remover "/>
           </Properties>
           <Events>

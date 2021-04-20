@@ -72,13 +72,15 @@ public class CadastroProdutos extends javax.swing.JFrame {
             }
         });
 
-        btnAdicionarProduto.setText("Adicionar");
+        btnAdicionarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone salvar.png"))); // NOI18N
+        btnAdicionarProduto.setText("Salvar");
         btnAdicionarProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdicionarProdutoActionPerformed(evt);
             }
         });
 
+        btnLimparProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone limpar.png"))); // NOI18N
         btnLimparProduto.setText("Limpar");
         btnLimparProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,6 +156,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
         tblProdutos.setToolTipText("");
         jScrollPane1.setViewportView(tblProdutos);
 
+        btnRemoverProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone remover.png"))); // NOI18N
         btnRemoverProduto.setText("Remover");
         btnRemoverProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,6 +164,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
             }
         });
 
+        btnAlterarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone alterar.png"))); // NOI18N
         btnAlterarProduto.setText("Alterar");
 
         lblConsultaNome.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -169,6 +173,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
         lblConsultaDescricao.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblConsultaDescricao.setText("Descrição:");
 
+        btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone buscar2.png"))); // NOI18N
         btnBuscar.setText("Buscar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -186,10 +191,10 @@ public class CadastroProdutos extends javax.swing.JFrame {
                         .addComponent(lblConsultaDescricao)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtConsultaDescricao))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 514, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)
+                    .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnRemoverProduto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnAlterarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(16, 16, 16))

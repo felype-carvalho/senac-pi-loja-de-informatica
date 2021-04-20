@@ -249,7 +249,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAdicionarProduto">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Adicionar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone salvar.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdicionarProdutoActionPerformed"/>
@@ -257,6 +260,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnLimparProduto">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone limpar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
           <Events>
@@ -291,11 +297,11 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtConsultaDescricao" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jScrollPane1" pref="522" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="514" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnBuscar" pref="101" max="32767" attributes="0"/>
+                      <Component id="btnBuscar" max="32767" attributes="0"/>
                       <Component id="btnRemoverProduto" max="32767" attributes="0"/>
                       <Component id="btnAlterarProduto" alignment="0" max="32767" attributes="0"/>
                   </Group>
@@ -354,6 +360,9 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnRemoverProduto">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone remover.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Remover"/>
           </Properties>
           <Events>
@@ -362,6 +371,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAlterarProduto">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone alterar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Alterar"/>
           </Properties>
         </Component>
@@ -387,6 +399,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnBuscar">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone buscar2.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
         </Component>
