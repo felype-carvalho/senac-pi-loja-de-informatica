@@ -39,7 +39,7 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="menuOpcoes1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Op&#xe7;&#xf5;es"/>
+            <Property name="text" type="java.lang.String" value="Op&#xe7;&#xf5;es."/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="opMenuPrincipal1">
