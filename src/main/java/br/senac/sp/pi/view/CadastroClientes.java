@@ -413,7 +413,7 @@ public class CadastroClientes extends javax.swing.JFrame {
 
         pnlConsultaLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnAlterar, btnRemover});
 
-        menuOpcoes1.setText("Opções");
+        menuOpcoes1.setText("Opções.");
 
         opMenuPrincipal1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
         opMenuPrincipal1.setText("Menu Principal");
