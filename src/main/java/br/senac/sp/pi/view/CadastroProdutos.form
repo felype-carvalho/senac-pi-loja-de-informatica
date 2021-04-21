@@ -148,7 +148,7 @@
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnAdicionarProduto" alignment="0" pref="131" max="32767" attributes="0"/>
+                              <Component id="btnSalvarProduto" alignment="0" pref="131" max="32767" attributes="0"/>
                               <Component id="txtQuantidadeProduto" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
                               <Component id="txtPrecoProduto" alignment="0" max="32767" attributes="0"/>
                           </Group>
@@ -190,7 +190,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnAdicionarProduto" pref="41" max="32767" attributes="0"/>
+                      <Component id="btnSalvarProduto" pref="41" max="32767" attributes="0"/>
                       <Component id="btnLimparProduto" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -247,7 +247,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPrecoProdutoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnAdicionarProduto">
+        <Component class="javax.swing.JButton" name="btnSalvarProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icone salvar.png"/>
@@ -255,7 +255,7 @@
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdicionarProdutoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarProdutoActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimparProduto">

@@ -28,7 +28,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
         txtDescricaoProduto = new javax.swing.JTextField();
         txtQuantidadeProduto = new javax.swing.JTextField();
         txtPrecoProduto = new javax.swing.JFormattedTextField();
-        btnAdicionarProduto = new javax.swing.JButton();
+        btnSalvarProduto = new javax.swing.JButton();
         btnLimparProduto = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -72,11 +72,11 @@ public class CadastroProdutos extends javax.swing.JFrame {
             }
         });
 
-        btnAdicionarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone salvar.png"))); // NOI18N
-        btnAdicionarProduto.setText("Salvar");
-        btnAdicionarProduto.addActionListener(new java.awt.event.ActionListener() {
+        btnSalvarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone salvar.png"))); // NOI18N
+        btnSalvarProduto.setText("Salvar");
+        btnSalvarProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAdicionarProdutoActionPerformed(evt);
+                btnSalvarProdutoActionPerformed(evt);
             }
         });
 
@@ -106,7 +106,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnAdicionarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                            .addComponent(btnSalvarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
                             .addComponent(txtQuantidadeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtPrecoProduto))
                         .addGap(18, 18, 18)
@@ -138,7 +138,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
                     .addComponent(lblPrecoProduto))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnAdicionarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(btnSalvarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
                     .addComponent(btnLimparProduto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -296,7 +296,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAdicionarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarProdutoActionPerformed
+    private void btnSalvarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarProdutoActionPerformed
         
         String nome= txtNomeProduto.getText();
         String descricao= txtDescricaoProduto.getText();
@@ -349,7 +349,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
                       
         modelo.addRow(new String[]{nome,descricao, quantidade, preco});
                        
-    }//GEN-LAST:event_btnAdicionarProdutoActionPerformed
+    }//GEN-LAST:event_btnSalvarProdutoActionPerformed
 
     private void btnRemoverProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverProdutoActionPerformed
           int indiceLinha = tblProdutos.getSelectedRow();
@@ -440,11 +440,11 @@ public class CadastroProdutos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAdicionarProduto;
     private javax.swing.JButton btnAlterarProduto;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnLimparProduto;
     private javax.swing.JButton btnRemoverProduto;
+    private javax.swing.JButton btnSalvarProduto;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
