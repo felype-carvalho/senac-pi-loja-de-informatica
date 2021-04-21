@@ -28,6 +28,8 @@ public class TelaVenda extends javax.swing.JFrame {
         lblDescricaoProduto = new javax.swing.JLabel();
         txtDescricaoProduto = new javax.swing.JTextField();
         btnBuscarProduto = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         lblValorTotalVenda = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
@@ -81,6 +83,8 @@ public class TelaVenda extends javax.swing.JFrame {
         btnBuscarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone buscar2.png"))); // NOI18N
         btnBuscarProduto.setText("Buscar");
 
+        jLabel1.setText("Quantidade:");
+
         javax.swing.GroupLayout pnlAdicionaProdutoLayout = new javax.swing.GroupLayout(pnlAdicionaProduto);
         pnlAdicionaProduto.setLayout(pnlAdicionaProdutoLayout);
         pnlAdicionaProdutoLayout.setHorizontalGroup(
@@ -88,20 +92,24 @@ public class TelaVenda extends javax.swing.JFrame {
             .addGroup(pnlAdicionaProdutoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlAdicionaProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlAdicionaProdutoLayout.createSequentialGroup()
                         .addComponent(lblNomeProduto)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblDescricaoProduto)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDescricaoProduto)))
-                .addGap(18, 18, 18)
-                .addGroup(pnlAdicionaProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBuscarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
-                    .addComponent(btnAdicionarCarrinho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(19, 19, 19))
+                        .addComponent(txtDescricaoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField1))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlAdicionaProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnAdicionarCarrinho, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                    .addComponent(btnBuscarProduto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlAdicionaProdutoLayout.setVerticalGroup(
             pnlAdicionaProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,12 +120,14 @@ public class TelaVenda extends javax.swing.JFrame {
                     .addComponent(txtNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblDescricaoProduto)
                     .addComponent(txtDescricaoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnBuscarProduto))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlAdicionaProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdicionarCarrinho, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Carrinho", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
@@ -186,9 +196,9 @@ public class TelaVenda extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Selecione o Cliente", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
 
-        lblNomeClienteVenda.setText("Nome:");
+        lblNomeClienteVenda.setText("Nome*:");
 
-        lblCpfClienteVenda.setText("CPF:");
+        lblCpfClienteVenda.setText("CPF*:");
 
         try {
             txtCpfClienteVenda.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
@@ -200,6 +210,11 @@ public class TelaVenda extends javax.swing.JFrame {
 
         btnSelecionarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone selecionar.png"))); // NOI18N
         btnSelecionarCliente.setText("Selecionar");
+        btnSelecionarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSelecionarClienteActionPerformed(evt);
+            }
+        });
 
         btnLimparTelaVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone limpar.png"))); // NOI18N
         btnLimparTelaVenda.setText("Limpar");
@@ -324,7 +339,7 @@ public class TelaVenda extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnlAdicionaProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlAdicionaProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, Short.MAX_VALUE))
         );
@@ -412,6 +427,21 @@ public class TelaVenda extends javax.swing.JFrame {
         txtEmailClienteVenda.setText("");
     }//GEN-LAST:event_btnLimparTelaVendaActionPerformed
 
+    private void btnSelecionarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelecionarClienteActionPerformed
+        
+        //validando a obrigatoriedade do nome
+        if(txtNomeClienteVenda.getText().trim().equals("")){
+            JOptionPane.showMessageDialog(this, "Digite o nome do cliente!");
+            return;
+        }
+        //validando a obrigatoriedade do CPF
+        if(txtCpfClienteVenda.getText().trim().length() == 9){
+            JOptionPane.showMessageDialog(this, "Digite o CPF do cliente!");
+            return;
+        }
+       
+    }//GEN-LAST:event_btnSelecionarClienteActionPerformed
+
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -452,12 +482,14 @@ public class TelaVenda extends javax.swing.JFrame {
     private javax.swing.JButton btnRemoverVenda;
     private javax.swing.JButton btnSelecionarCliente;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblCpfClienteVenda;
     private javax.swing.JLabel lblDescricaoProduto;
     private javax.swing.JLabel lblEmailClienteVenda;

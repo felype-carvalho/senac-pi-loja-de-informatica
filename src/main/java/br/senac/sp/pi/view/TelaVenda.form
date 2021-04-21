@@ -110,7 +110,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="pnlAdicionaProduto" min="-2" pref="208" max="-2" attributes="0"/>
+              <Component id="pnlAdicionaProduto" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel2" pref="195" max="32767" attributes="0"/>
           </Group>
@@ -133,23 +133,27 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jScrollPane1" alignment="0" min="-2" pref="515" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Component id="lblNomeProduto" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtNomeProduto" min="-2" pref="168" max="-2" attributes="0"/>
+                          <Component id="txtNomeProduto" min="-2" pref="122" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="lblDescricaoProduto" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtDescricaoProduto" max="32767" attributes="0"/>
+                          <Component id="txtDescricaoProduto" min="-2" pref="150" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jTextField1" max="32767" attributes="0"/>
                       </Group>
+                      <Component id="jScrollPane1" min="-2" pref="533" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnBuscarProduto" pref="180" max="32767" attributes="0"/>
-                      <Component id="btnAdicionarCarrinho" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="btnAdicionarCarrinho" pref="181" max="32767" attributes="0"/>
+                      <Component id="btnBuscarProduto" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -162,14 +166,16 @@
                       <Component id="txtNomeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblDescricaoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtDescricaoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnBuscarProduto" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jScrollPane1" min="-2" pref="116" max="-2" attributes="0"/>
                       <Component id="btnAdicionarCarrinho" min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -228,6 +234,13 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Quantidade:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField1">
         </Component>
       </SubComponents>
     </Container>
@@ -391,14 +404,14 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblNomeClienteVenda">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nome:"/>
+            <Property name="text" type="java.lang.String" value="Nome*:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNomeClienteVenda">
         </Component>
         <Component class="javax.swing.JLabel" name="lblCpfClienteVenda">
           <Properties>
-            <Property name="text" type="java.lang.String" value="CPF:"/>
+            <Property name="text" type="java.lang.String" value="CPF*:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JFormattedTextField" name="txtCpfClienteVenda">
@@ -422,6 +435,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Selecionar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSelecionarClienteActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimparTelaVenda">
           <Properties>
