@@ -16,7 +16,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         separadorMenuOpcoes = new javax.swing.JSeparator();
-        jPanel1 = new javax.swing.JPanel();
+        pnlMenuPrincipal = new javax.swing.JPanel();
         painelImagemFundo1 = new br.senac.sp.pi.model.PainelImagemFundo();
         btnTelaCadastroClientes = new javax.swing.JButton();
         btnTelaCadastroProdutos = new javax.swing.JButton();
@@ -33,7 +33,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Menu Principal", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 14))); // NOI18N
+        pnlMenuPrincipal.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Menu Principal", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 14))); // NOI18N
 
         painelImagemFundo1.setImg(new ImageIcon("src/main/resources\\Imagem Fundo Painel.jpg"));
 
@@ -103,14 +103,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         painelImagemFundo1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnTelaCadastroClientes, btnTelaCadastroProdutos, btnTelaRelSintetico, btnTelaVendas});
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnlMenuPrincipalLayout = new javax.swing.GroupLayout(pnlMenuPrincipal);
+        pnlMenuPrincipal.setLayout(pnlMenuPrincipalLayout);
+        pnlMenuPrincipalLayout.setHorizontalGroup(
+            pnlMenuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(painelImagemFundo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnlMenuPrincipalLayout.setVerticalGroup(
+            pnlMenuPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(painelImagemFundo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -170,11 +170,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlMenuPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -273,7 +273,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnTelaCadastroProdutos;
     private javax.swing.JButton btnTelaRelSintetico;
     private javax.swing.JButton btnTelaVendas;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JMenu menuOpcoes;
     private javax.swing.JMenuItem opCadastroClientes;
@@ -282,6 +281,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem opSair;
     private javax.swing.JMenuItem opTelaVendas;
     private br.senac.sp.pi.model.PainelImagemFundo painelImagemFundo1;
+    private javax.swing.JPanel pnlMenuPrincipal;
     private javax.swing.JSeparator separadorMenuOpcoes;
     // End of variables declaration//GEN-END:variables
 }
