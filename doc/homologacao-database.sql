@@ -5,12 +5,13 @@ USE homologacao;
 CREATE TABLE produto (id int auto_increment primary key, 
                       nome varchar(80) not null,
                       descricao varchar(120),
-                      preco decimal(10,2));
+                      preco decimal(10,2) not null,
+                      qtd int not null);
 
 CREATE TABLE cliente (id int auto_increment primary key, 
                       nome varchar(80) not null,
                       cpf varchar(14) not null,
-                      numero_telefone varchar(14)
+                      numero_telefone varchar(14),
                       data_nascimento date,
                       estado_civil varchar(20),
                       endereco varchar(90) not null,
