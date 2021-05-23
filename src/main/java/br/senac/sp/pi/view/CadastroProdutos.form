@@ -146,26 +146,21 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnSalvarProduto" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
-                              <Component id="txtQuantidadeProduto" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnLimparProduto" max="32767" attributes="0"/>
-                          <EmptySpace pref="221" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="txtNomeProduto" pref="290" max="32767" attributes="0"/>
-                                  <Component id="txtDescricaoProduto" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnSalvarProduto" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
+                                  <Component id="txtQuantidadeProduto" linkSize="1" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="txtPrecoProduto" min="-2" pref="131" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnLimparProduto" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="txtNomeProduto" pref="290" max="32767" attributes="0"/>
+                          <Component id="txtDescricaoProduto" max="32767" attributes="0"/>
                       </Group>
+                      <Component id="txtPrecoProduto" linkSize="1" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -185,12 +180,12 @@
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblQuantidadeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtQuantidadeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtQuantidadeProduto" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblPrecoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtPrecoProduto" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="txtPrecoProduto" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -253,23 +248,10 @@
             <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtQuantidadeProdutoFocusLost"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="txtPrecoProduto">
-          <Properties>
-            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-              <Format subtype="0" type="4"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtPrecoProdutoFocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtPrecoProdutoFocusLost"/>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPrecoProdutoActionPerformed"/>
-            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPrecoProdutoKeyTyped"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="btnSalvarProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone salvar.png"/>
+              <Image iconType="3" name="/icone_salvar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
@@ -280,13 +262,15 @@
         <Component class="javax.swing.JButton" name="btnLimparProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone limpar.png"/>
+              <Image iconType="3" name="/icone_limpar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimparProdutoActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtPrecoProduto">
         </Component>
       </SubComponents>
     </Container>
@@ -300,7 +284,6 @@
           </Border>
         </Property>
       </Properties>
-
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
@@ -310,11 +293,11 @@
                       <Group type="102" attributes="0">
                           <Component id="lblConsultaNome" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtConsultaNome" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="txtConsultaNomeProd" min="-2" pref="146" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="lblConsultaDescricao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtConsultaDescricao" max="32767" attributes="0"/>
+                          <Component id="txtConsultaIdProd" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jScrollPane1" pref="514" max="32767" attributes="0"/>
                   </Group>
@@ -334,9 +317,9 @@
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblConsultaNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtConsultaNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtConsultaNomeProd" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblConsultaDescricao" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtConsultaDescricao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtConsultaIdProd" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnBuscar" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="32767" attributes="0"/>
@@ -349,7 +332,7 @@
                       </Group>
                       <Component id="jScrollPane1" min="-2" pref="133" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="7" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -366,9 +349,9 @@
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="0">
+                    <Column editable="true" title="Id" type="java.lang.Object"/>
                     <Column editable="true" title="Nome" type="java.lang.Object"/>
-                    <Column editable="true" title="Descri&#xe7;&#xe3;o" type="java.lang.Object"/>
-                    <Column editable="true" title="Quantidade" type="java.lang.Object"/>
+                    <Column editable="true" title="Qtd" type="java.lang.Object"/>
                     <Column editable="true" title="Pre&#xe7;o" type="java.lang.Object"/>
                   </Table>
                 </Property>
@@ -380,7 +363,7 @@
         <Component class="javax.swing.JButton" name="btnRemoverProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone remover.png"/>
+              <Image iconType="3" name="/icone_remover.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Remover"/>
           </Properties>
@@ -391,10 +374,13 @@
         <Component class="javax.swing.JButton" name="btnAlterarProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone alterar.png"/>
+              <Image iconType="3" name="/icone_alterar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Alterar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAlterarProdutoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblConsultaNome">
           <Properties>
@@ -412,25 +398,28 @@
             <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtConsultaNome">
+        <Component class="javax.swing.JTextField" name="txtConsultaNomeProd">
           <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaNomeFocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaNomeFocusLost"/>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaNomeProdFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaNomeProdFocusLost"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtConsultaDescricao">
+        <Component class="javax.swing.JTextField" name="txtConsultaIdProd">
           <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaDescricaoFocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaDescricaoFocusLost"/>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaIdProdFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtConsultaIdProdFocusLost"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnBuscar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone buscar2.png"/>
+              <Image iconType="3" name="/icone_buscar2.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
