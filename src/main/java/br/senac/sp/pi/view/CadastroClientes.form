@@ -254,7 +254,7 @@
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="btnSalvar" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="btnSalvarCliente" min="-2" pref="124" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnLimpar" min="-2" pref="131" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
@@ -304,7 +304,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="cboEstdCivil" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -313,7 +313,7 @@
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="btnLimpar" alignment="1" min="-2" pref="45" max="-2" attributes="0"/>
-                              <Component id="btnSalvar" min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="btnSalvarCliente" min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
@@ -328,11 +328,13 @@
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblCPF" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtCadastroCPF" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="lblTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtTelefone" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCadastroCPF" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="lblTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
@@ -443,7 +445,7 @@
         <Component class="javax.swing.JFormattedTextField" name="txtTelefone">
           <Properties>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-              <Format format="(##) #####-####" subtype="-1" type="5"/>
+              <Format format="(##)#####-####" subtype="-1" type="5"/>
             </Property>
           </Properties>
           <Events>
@@ -556,21 +558,21 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="btnSalvar">
+        <Component class="javax.swing.JButton" name="btnSalvarCliente">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone salvar.png"/>
+              <Image iconType="3" name="/icone_salvar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarClienteActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimpar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone limpar.png"/>
+              <Image iconType="3" name="/icone_limpar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
@@ -655,18 +657,19 @@
             <Component class="javax.swing.JTable" name="tblClientes">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="11" rowCount="0">
+                  <Table columnCount="12" rowCount="0">
+                    <Column editable="true" title="Id" type="java.lang.Object"/>
                     <Column editable="true" title="Nome" type="java.lang.Object"/>
-                    <Column editable="true" title="E-mail" type="java.lang.Object"/>
-                    <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
-                    <Column editable="true" title="Cidade" type="java.lang.Object"/>
                     <Column editable="true" title="CPF" type="java.lang.Object"/>
-                    <Column editable="true" title="Telefone" type="java.lang.Object"/>
-                    <Column editable="true" title="CEP" type="java.lang.Object"/>
-                    <Column editable="true" title="UF" type="java.lang.Object"/>
+                    <Column editable="true" title="Tel" type="java.lang.Object"/>
+                    <Column editable="true" title="Email" type="java.lang.Object"/>
+                    <Column editable="true" title="Data Nascimento" type="java.lang.Object"/>
+                    <Column editable="true" title="Estado Civil" type="java.lang.Object"/>
+                    <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
                     <Column editable="true" title="Complemento" type="java.lang.Object"/>
-                    <Column editable="true" title="Data de nascimento" type="java.lang.Object"/>
-                    <Column editable="true" title="Estado Civ&#xed;l" type="java.lang.Object"/>
+                    <Column editable="true" title="CEP" type="java.lang.Object"/>
+                    <Column editable="true" title="Cidade" type="java.lang.Object"/>
+                    <Column editable="true" title="UF" type="java.lang.Object"/>
                   </Table>
                 </Property>
               </Properties>
@@ -766,17 +769,20 @@
             <Component class="javax.swing.JButton" name="btnBuscar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icone buscar2.png"/>
+                  <Image iconType="3" name="/icone_buscar2.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Buscar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
         <Component class="javax.swing.JButton" name="btnAlterar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone alterar.png"/>
+              <Image iconType="3" name="/icone_alterar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Alterar"/>
           </Properties>
@@ -787,7 +793,7 @@
         <Component class="javax.swing.JButton" name="btnRemover">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone remover.png"/>
+              <Image iconType="3" name="/icone_remover.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Remover"/>
           </Properties>
