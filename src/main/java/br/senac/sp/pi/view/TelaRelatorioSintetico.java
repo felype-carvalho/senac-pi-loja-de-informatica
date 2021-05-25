@@ -56,6 +56,7 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
 
         jLabel2.setText("Pesquise pelo período:");
 
+        btnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone_buscar2.png"))); // NOI18N
         btnPesquisar.setText("Pesquisar");
         btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,6 +86,7 @@ public class TelaRelatorioSintetico extends javax.swing.JFrame {
 
         jLabel4.setText("De:");
 
+        btnRelatorioAnalitico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone_analytics2.png"))); // NOI18N
         btnRelatorioAnalitico.setText("Detalhes");
         btnRelatorioAnalitico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

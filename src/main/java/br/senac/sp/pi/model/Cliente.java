@@ -20,6 +20,8 @@ public class Cliente {
 
     private String endereco;
 
+    private String complemento;
+
     private String cep;
 
     private String cidade;
@@ -88,6 +90,14 @@ public class Cliente {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public String getCep() {

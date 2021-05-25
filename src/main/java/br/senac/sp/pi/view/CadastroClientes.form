@@ -58,7 +58,7 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Alt+P"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Casdastro de Produtos"/>
+                <Property name="text" type="java.lang.String" value="Cadastro de Produtos"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opCadastroProdutos1ActionPerformed"/>
@@ -173,46 +173,40 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblCidade" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblCPF" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                          <Component id="lblCPF" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="txtCadastroCPF" min="-2" pref="109" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="txtCadastroCPF" min="-2" pref="109" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblTelefone" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="txtTelefone" min="-2" pref="163" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jScrollPane4" linkSize="3" alignment="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="lblTelefone" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtTelefone" min="-2" pref="163" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblCadastroNomeCliente" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane2" linkSize="3" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jScrollPane1" linkSize="3" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblEndereco" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane3" linkSize="3" min="-2" pref="368" max="-2" attributes="0"/>
-                              </Group>
+                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="lblCadastroNomeCliente" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane2" linkSize="6" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jScrollPane1" linkSize="6" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="lblEndereco" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" linkSize="6" min="-2" pref="368" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="lblCidade" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jScrollPane4" linkSize="6" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="48" max="32767" attributes="0"/>
@@ -254,7 +248,7 @@
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="btnSalvar" min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="btnSalvarCliente" min="-2" pref="124" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnLimpar" min="-2" pref="131" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
@@ -297,14 +291,15 @@
                               <Component id="jScrollPane2" linkSize="5" min="-2" max="-2" attributes="0"/>
                               <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jScrollPane3" linkSize="5" min="-2" max="-2" attributes="0"/>
                               <Component id="lblEndereco" min="-2" max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" linkSize="5" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="cboEstdCivil" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -313,26 +308,32 @@
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="btnLimpar" alignment="1" min="-2" pref="45" max="-2" attributes="0"/>
-                              <Component id="btnSalvar" min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="btnSalvarCliente" min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane4" linkSize="5" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCidade" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Component id="lblCidade" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTelefone" alignment="3" pref="25" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane4" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblCPF" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtCadastroCPF" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
                               </Group>
-                          </Group>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblCPF" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtCadastroCPF" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="lblTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -443,7 +444,7 @@
         <Component class="javax.swing.JFormattedTextField" name="txtTelefone">
           <Properties>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
-              <Format format="(##) #####-####" subtype="-1" type="5"/>
+              <Format format="(##)#####-####" subtype="-1" type="5"/>
             </Property>
           </Properties>
           <Events>
@@ -556,21 +557,21 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="btnSalvar">
+        <Component class="javax.swing.JButton" name="btnSalvarCliente">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone salvar.png"/>
+              <Image iconType="3" name="/icone_salvar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarClienteActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimpar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone limpar.png"/>
+              <Image iconType="3" name="/icone_limpar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
@@ -616,7 +617,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="28" max="32767" attributes="0"/>
+                          <EmptySpace pref="29" max="32767" attributes="0"/>
                           <Component id="btnAlterar" min="-2" pref="129" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnRemover" min="-2" pref="142" max="-2" attributes="0"/>
@@ -639,7 +640,7 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jScrollPane5" min="-2" pref="163" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -655,18 +656,19 @@
             <Component class="javax.swing.JTable" name="tblClientes">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="11" rowCount="0">
+                  <Table columnCount="12" rowCount="0">
+                    <Column editable="true" title="Id" type="java.lang.Object"/>
                     <Column editable="true" title="Nome" type="java.lang.Object"/>
-                    <Column editable="true" title="E-mail" type="java.lang.Object"/>
-                    <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
-                    <Column editable="true" title="Cidade" type="java.lang.Object"/>
                     <Column editable="true" title="CPF" type="java.lang.Object"/>
-                    <Column editable="true" title="Telefone" type="java.lang.Object"/>
-                    <Column editable="true" title="CEP" type="java.lang.Object"/>
-                    <Column editable="true" title="UF" type="java.lang.Object"/>
+                    <Column editable="true" title="Tel" type="java.lang.Object"/>
+                    <Column editable="true" title="Email" type="java.lang.Object"/>
+                    <Column editable="true" title="Data Nascimento" type="java.lang.Object"/>
+                    <Column editable="true" title="Estado Civil" type="java.lang.Object"/>
+                    <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
                     <Column editable="true" title="Complemento" type="java.lang.Object"/>
-                    <Column editable="true" title="Data de nascimento" type="java.lang.Object"/>
-                    <Column editable="true" title="Estado Civ&#xed;l" type="java.lang.Object"/>
+                    <Column editable="true" title="CEP" type="java.lang.Object"/>
+                    <Column editable="true" title="Cidade" type="java.lang.Object"/>
+                    <Column editable="true" title="UF" type="java.lang.Object"/>
                   </Table>
                 </Property>
               </Properties>
@@ -692,8 +694,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblConsultaNomeCliente" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane6" min="-2" pref="275" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtConsultaNomeCliente" min="-2" pref="243" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                               <Component id="lblConsultaCPFCliente" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="txtConsultaCPF" min="-2" pref="109" max="-2" attributes="0"/>
@@ -712,14 +714,16 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblConsultaNomeCliente" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblConsultaNomeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtConsultaNomeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="lblConsultaCPFCliente" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtConsultaCPF" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane6" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="21" max="32767" attributes="0"/>
+                      <EmptySpace min="26" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -742,17 +746,6 @@
                 <Property name="text" type="java.lang.String" value="Pesquise o cliente pelo nome ou CPF"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="javax.swing.JTextPane" name="txtConsultaNomeCliente">
-                </Component>
-              </SubComponents>
-            </Container>
             <Component class="javax.swing.JLabel" name="lblConsultaCPFCliente">
               <Properties>
                 <Property name="text" type="java.lang.String" value="CPF:"/>
@@ -766,17 +759,22 @@
             <Component class="javax.swing.JButton" name="btnBuscar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icone buscar2.png"/>
+                  <Image iconType="3" name="/icone_buscar2.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Buscar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtConsultaNomeCliente">
             </Component>
           </SubComponents>
         </Container>
         <Component class="javax.swing.JButton" name="btnAlterar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone alterar.png"/>
+              <Image iconType="3" name="/icone_alterar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Alterar"/>
           </Properties>
@@ -787,7 +785,7 @@
         <Component class="javax.swing.JButton" name="btnRemover">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone remover.png"/>
+              <Image iconType="3" name="/icone_remover.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Remover"/>
           </Properties>

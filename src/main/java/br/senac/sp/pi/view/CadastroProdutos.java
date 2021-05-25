@@ -6,8 +6,6 @@ import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.text.DefaultFormatterFactory;
-import javax.swing.text.NumberFormatter;
 
 
 public class CadastroProdutos extends javax.swing.JFrame {
@@ -164,10 +162,6 @@ public class CadastroProdutos extends javax.swing.JFrame {
                 .addGroup(pnlCadastroProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblQuantidadeProduto)
                     .addComponent(txtQuantidadeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPrecoProduto)
-                    .addComponent(txtPrecoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnlCadastroProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPrecoProduto)
@@ -214,7 +208,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
         lblConsultaNome.setText("Nome:");
 
         lblConsultaDescricao.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        lblConsultaDescricao.setText("Descrição:");
+        lblConsultaDescricao.setText("ID:");
 
         txtConsultaNomeProd.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -254,9 +248,10 @@ public class CadastroProdutos extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtConsultaNomeProd, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblConsultaDescricao)
+                        .addComponent(lblConsultaDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtConsultaIdProd))
+                        .addComponent(txtConsultaIdProd)
+                        .addGap(112, 112, 112))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 514, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlConsultaProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -455,7 +450,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvarProdutoActionPerformed
 
     private void btnRemoverProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverProdutoActionPerformed
-         if(tblProdutos.getRowCount() > 0) {
+         if(tblProdutos.getSelectedRow() != -1) {
             int numeroLinha = tblProdutos.getSelectedRow();
             int idProduto = Integer.parseInt(tblProdutos.getModel().getValueAt(numeroLinha, 0).toString());
             try {
@@ -565,18 +560,18 @@ public class CadastroProdutos extends javax.swing.JFrame {
 
         listaProduto = ProdutoController.pesquisaPorNomeOuId(nomeProd, idProdConvert);
 
-        DefaultTableModel tmComputador = new DefaultTableModel();
-        tmComputador.addColumn("Id");
-        tmComputador.addColumn("Nome");
-        tmComputador.addColumn("Descrição");
-        tmComputador.addColumn("Qtd");
-        tmComputador.addColumn("Preço");
-        tblProdutos.setModel(tmComputador);
+        DefaultTableModel tmProduto = new DefaultTableModel();
+        tmProduto.addColumn("Id");
+        tmProduto.addColumn("Nome");
+        tmProduto.addColumn("Descrição");
+        tmProduto.addColumn("Qtd");
+        tmProduto.addColumn("Preço");
+        tblProdutos.setModel(tmProduto);
 
-        tmComputador.setRowCount(0);
+        tmProduto.setRowCount(0);
         
         for (String[] item : listaProduto) {
-            tmComputador.addRow(item);
+            tmProduto.addRow(item);
         }
         tblProdutos.getColumnModel().getColumn(0).setPreferredWidth(50); //Id
         tblProdutos.getColumnModel().getColumn(1).setPreferredWidth(150); // Nome
@@ -586,7 +581,7 @@ public class CadastroProdutos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarActionPerformed
 
     private void btnAlterarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarProdutoActionPerformed
-        if(tblProdutos.getRowCount()>0) {
+        if(tblProdutos.getSelectedRow() != -1) {
             int numeroLinha = tblProdutos.getSelectedRow();
 
             int idProd = Integer.parseInt(tblProdutos.getModel().getValueAt(numeroLinha, 0).toString());

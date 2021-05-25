@@ -133,7 +133,7 @@
         <Container class="br.senac.sp.pi.model.PainelImagemFundo" name="painelImagemFundo1">
           <Properties>
             <Property name="img" type="javax.swing.ImageIcon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new ImageIcon(&quot;src/main/resources\\Imagem Fundo Painel.jpg&quot;)" type="code"/>
+              <Connection code="new ImageIcon(&quot;src/main/resources\\Imagem_Fundo_Painel.jpg&quot;)" type="code"/>
             </Property>
           </Properties>
 
@@ -177,7 +177,7 @@
             <Component class="javax.swing.JButton" name="btnTelaCadastroClientes">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icone cadastro clientes.png"/>
+                  <Image iconType="3" name="/icone_cadastro_clientes.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cadastro de Clientes"/>
               </Properties>
@@ -188,7 +188,7 @@
             <Component class="javax.swing.JButton" name="btnTelaCadastroProdutos">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icone produto.png"/>
+                  <Image iconType="3" name="/icone_produto.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cadastro de Produtos"/>
               </Properties>
@@ -199,7 +199,7 @@
             <Component class="javax.swing.JButton" name="btnTelaVendas">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icone vendas.png"/>
+                  <Image iconType="3" name="/icone_vendas.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tela de Vendas"/>
               </Properties>
@@ -210,7 +210,7 @@
             <Component class="javax.swing.JButton" name="btnTelaRelSintetico">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icone analytics1.png"/>
+                  <Image iconType="3" name="/icone_analytics1.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
               </Properties>

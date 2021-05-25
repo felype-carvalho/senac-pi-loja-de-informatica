@@ -35,9 +35,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         pnlMenuPrincipal.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Menu Principal", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 14))); // NOI18N
 
-        painelImagemFundo1.setImg(new ImageIcon("src/main/resources\\Imagem Fundo Painel.jpg"));
+        painelImagemFundo1.setImg(new ImageIcon("src/main/resources\\Imagem_Fundo_Painel.jpg"));
 
-        btnTelaCadastroClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone cadastro clientes.png"))); // NOI18N
+        btnTelaCadastroClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone_cadastro_clientes.png"))); // NOI18N
         btnTelaCadastroClientes.setText("Cadastro de Clientes");
         btnTelaCadastroClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,7 +45,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnTelaCadastroProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone produto.png"))); // NOI18N
+        btnTelaCadastroProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone_produto.png"))); // NOI18N
         btnTelaCadastroProdutos.setText("Cadastro de Produtos");
         btnTelaCadastroProdutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,7 +53,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnTelaVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone vendas.png"))); // NOI18N
+        btnTelaVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone_vendas.png"))); // NOI18N
         btnTelaVendas.setText("Tela de Vendas");
         btnTelaVendas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +61,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnTelaRelSintetico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone analytics1.png"))); // NOI18N
+        btnTelaRelSintetico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icone_analytics1.png"))); // NOI18N
         btnTelaRelSintetico.setText("Relatórios");
         btnTelaRelSintetico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

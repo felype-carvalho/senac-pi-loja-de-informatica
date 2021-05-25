@@ -117,7 +117,8 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="pnlAdicionaProduto" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="pnlCarrinho" max="32767" attributes="0"/>
+              <Component id="pnlCarrinho" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -137,26 +138,32 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+                          <Component id="lblIdProduto" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtIdProduto" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="lblNomeProduto" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtNomeProduto" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblDescricaoProduto" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtDescricaoProduto" min="-2" pref="150" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblQuantidadeProduto" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtQuantidadeProduto" min="-2" pref="57" max="-2" attributes="0"/>
+                          <Component id="btnBuscarProduto" min="-2" pref="176" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jScrollPane1" min="-2" pref="544" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="574" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnAdicionarCarrinho" max="32767" attributes="0"/>
-                      <Component id="btnBuscarProduto" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                          <Component id="lblQtdProduto" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtQtdProduto" min="-2" pref="86" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="btnAdicionarCarrinho" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -169,21 +176,18 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblNomeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtNomeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblDescricaoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtDescricaoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblQuantidadeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtQuantidadeProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblIdProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtIdProduto" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnBuscarProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="btnAdicionarCarrinho" min="-2" pref="60" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="64" max="32767" attributes="0"/>
-                      </Group>
-                      <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
+                      <Component id="lblQtdProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtQtdProduto" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btnAdicionarCarrinho" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="126" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -199,7 +203,8 @@
             <Component class="javax.swing.JTable" name="tblDetalhesProduto">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="4" rowCount="0">
+                  <Table columnCount="5" rowCount="0">
+                    <Column editable="true" title="Id" type="java.lang.Object"/>
                     <Column editable="true" title="Nome" type="java.lang.Object"/>
                     <Column editable="true" title="Descri&#xe7;&#xe3;o" type="java.lang.Object"/>
                     <Column editable="true" title="Quantidade" type="java.lang.Object"/>
@@ -213,7 +218,7 @@
         <Component class="javax.swing.JButton" name="btnAdicionarCarrinho">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone adicionar.png"/>
+              <Image iconType="3" name="/icone_adicionar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Adicionar ao carrinho"/>
           </Properties>
@@ -232,36 +237,34 @@
             <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtNomeProdutoFocusLost"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblDescricaoProduto">
+        <Component class="javax.swing.JLabel" name="lblIdProduto">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o:"/>
+            <Property name="text" type="java.lang.String" value="Id:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtDescricaoProduto">
+        <Component class="javax.swing.JTextField" name="txtIdProduto">
           <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDescricaoProdutoFocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDescricaoProdutoFocusLost"/>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtIdProdutoFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtIdProdutoFocusLost"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnBuscarProduto">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone buscar2.png"/>
+              <Image iconType="3" name="/icone_buscar2.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarProdutoActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblQuantidadeProduto">
+        <Component class="javax.swing.JLabel" name="lblQtdProduto">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Quantidade:"/>
+            <Property name="text" type="java.lang.String" value="Qtd Produto:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtQuantidadeProduto">
-          <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtQuantidadeProdutoFocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtQuantidadeProdutoFocusLost"/>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtQuantidadeProdutoActionPerformed"/>
-          </Events>
+        <Component class="javax.swing.JTextField" name="txtQtdProduto">
         </Component>
       </SubComponents>
     </Container>
@@ -277,23 +280,29 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jScrollPane3" alignment="0" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="lblValorTotalVenda" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblValorTotalCliente" min="-2" pref="177" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="btnRemoverVenda" linkSize="1" min="-2" pref="126" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton3" linkSize="1" min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="btnFinalizarCompra" linkSize="1" min="-2" pref="160" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="lblClienteCarrinho" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="252" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblNomeCliente" min="-2" pref="240" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="lblCpfCarrinho" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblCPFCliente" min="-2" pref="189" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
+                      <Component id="jScrollPane3" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -303,25 +312,29 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblClienteCarrinho" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblCpfCarrinho" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                  <Component id="jScrollPane3" min="-2" pref="116" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace pref="26" max="32767" attributes="0"/>
+                      <Component id="lblClienteCarrinho" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblCpfCarrinho" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblNomeCliente" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblCPFCliente" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane3" min="-2" pref="116" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnRemoverVenda" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton3" linkSize="3" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="btnFinalizarCompra" linkSize="3" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          <Component id="lblValorTotalVenda" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblValorTotalVenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblValorTotalCliente" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -334,15 +347,15 @@
             <Property name="text" type="java.lang.String" value="Valor total da compra:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="btnFinalizarCompra">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone selecionar.png"/>
+              <Image iconType="3" name="/icone_selecionar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Finalizar compra"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFinalizarCompraActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane3">
@@ -369,7 +382,7 @@
         <Component class="javax.swing.JButton" name="btnRemoverVenda">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone remover.png"/>
+              <Image iconType="3" name="/icone_remover.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Remover "/>
           </Properties>
@@ -387,6 +400,12 @@
             <Property name="text" type="java.lang.String" value="CPF:"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JLabel" name="lblNomeCliente">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblCPFCliente">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblValorTotalCliente">
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="pnlSelecionarCliente">
@@ -403,7 +422,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="lblNomeClienteVenda" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -412,40 +431,42 @@
                           <Component id="lblCpfClienteVenda" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtCpfClienteVenda" min="-2" pref="124" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="lblEmailClienteVenda" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtEmailClienteVenda" min="-2" pref="188" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="btnSelecionarCliente" linkSize="5" min="-2" pref="204" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnLimparTelaVenda" linkSize="5" min="-2" pref="204" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jScrollPane2" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                          <Component id="btnSelecionarCliente" linkSize="6" min="-2" pref="204" max="-2" attributes="0"/>
+                          <Component id="btnBuscarCliente" linkSize="6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="btnLimparTelaVenda" linkSize="6" alignment="1" min="-2" pref="204" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace pref="17" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblNomeClienteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtNomeClienteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblCpfClienteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtCpfClienteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblEmailClienteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtEmailClienteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBuscarCliente" linkSize="7" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnSelecionarCliente" linkSize="4" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="btnLimparTelaVenda" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="btnSelecionarCliente" linkSize="7" min="-2" pref="32" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnLimparTelaVenda" linkSize="7" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane2" min="-2" pref="101" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -478,21 +499,10 @@
             <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtCpfClienteVendaFocusLost"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblEmailClienteVenda">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Email:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="txtEmailClienteVenda">
-          <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtEmailClienteVendaFocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtEmailClienteVendaFocusLost"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="btnSelecionarCliente">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone selecionar.png"/>
+              <Image iconType="3" name="/icone_selecionar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Selecionar"/>
           </Properties>
@@ -503,7 +513,7 @@
         <Component class="javax.swing.JButton" name="btnLimparTelaVenda">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icone limpar.png"/>
+              <Image iconType="3" name="/icone_limpar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
@@ -511,6 +521,38 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimparTelaVendaActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JButton" name="btnBuscarCliente">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icone_buscar2.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Buscar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarClienteActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tblClientes">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="4" rowCount="0">
+                    <Column editable="true" title="Id" type="java.lang.Object"/>
+                    <Column editable="true" title="Nome" type="java.lang.Object"/>
+                    <Column editable="true" title="CPF" type="java.lang.Object"/>
+                    <Column editable="true" title="Email" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>
